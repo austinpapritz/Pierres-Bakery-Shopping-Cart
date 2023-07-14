@@ -8,7 +8,7 @@ class Program
     {
       // Welcome.
       Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
-      Console.WriteLine("Welcome to Pappy's Bakery!");
+      Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("A loaf of bread is $5, a pastry is $2!");
       Console.WriteLine("Loaves of bread are buy 2 get 1 free!");
       Console.WriteLine("Pastries are buy 3 get 1 free!");
