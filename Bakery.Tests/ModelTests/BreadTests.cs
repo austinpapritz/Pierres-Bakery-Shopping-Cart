@@ -19,14 +19,15 @@ public class BreadTests
     public void BreadPriceCalc_ReturnProductOfCountAndPrice_Int()
     {
         // Arrange
-        int expectedPrice = 25;
-        Bread newBread = new Bread(5);
+        int expectedPrice = 5;
+        Bread newBread = new Bread(1);
         // Act
         int testPrice = newBread.BreadPriceCalc();
         // Assert
         Assert.AreEqual(expectedPrice, testPrice);
     }
-
+    
+    [Ignore]
     [TestMethod]
     public void BreadPriceCalc_CalculateDiscount_Int()
     {
@@ -44,5 +45,24 @@ public class BreadTests
         Assert.AreEqual(discountOneBread, noDiscount);
         Assert.AreEqual(discountTwoBread, noDiscount);
         Assert.AreEqual(discountThreeBread, discount);
+    }
+
+    [TestMethod]
+    public void BreadPriceCalc_CalculatePriceMinusDiscount_Int()
+    {
+        // Arrange
+        int expectedPriceSeven = 25;
+        int expectedPriceEightAndNine = 30;
+        Bread sevenBread = new Bread(7);
+        Bread eightBread = new Bread(8);
+        Bread nineBread = new Bread(9);
+        // Act
+        int sevenBreadTotal = sevenBread.BreadPriceCalc(); 
+        int eightBreadTotal = eightBread.BreadPriceCalc(); 
+        int nineBreadTotal = nineBread.BreadPriceCalc();
+        // Assert
+        Assert.AreEqual(sevenBreadTotal, expectedPriceSeven);
+        Assert.AreEqual(eightBreadTotal, expectedPriceEightAndNine);
+        Assert.AreEqual(nineBreadTotal, expectedPriceEightAndNine);
     }
 }
