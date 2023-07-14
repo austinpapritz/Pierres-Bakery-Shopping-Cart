@@ -1,0 +1,15 @@
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\bin\Debug\net6.0\Bakery.exe
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\bin\Debug\net6.0\Bakery.deps.json
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\bin\Debug\net6.0\Bakery.runtimeconfig.json
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\bin\Debug\net6.0\Bakery.dll
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\bin\Debug\net6.0\Bakery.pdb
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\Bakery.csproj.AssemblyReference.cache
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\Bakery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\Bakery.AssemblyInfoInputs.cache
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\Bakery.AssemblyInfo.cs
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\Bakery.csproj.CoreCompileInputs.cache
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\Bakery.dll
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\refint\Bakery.dll
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\Bakery.pdb
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\Bakery.genruntimeconfig.cache
+C:\Users\P4ppy\Epicodus\C#\Week 1\Bakery.Solution\Bakery\obj\Debug\net6.0\ref\Bakery.dll
