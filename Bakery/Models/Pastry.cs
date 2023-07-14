@@ -12,8 +12,9 @@ public class Pastry
 
         public int PastryPriceCalc()
     {
-        return Count * _price;
-        // int discount = (Count / 3 ) * _price;
+        // int total = Count * _price;
+        int discount = (Count / 4 ) * _price;
+        return discount;
         // return total - discount;
     }
 }
