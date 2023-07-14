@@ -11,7 +11,7 @@ public class BreadTests
         // Arrange
         Bread newBread = new Bread(1);
         // Assert
-        Assert.AreEqual(typeof(Bread),newBread.GetType());
+        Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
     [Ignore]
@@ -26,7 +26,7 @@ public class BreadTests
         // Assert
         Assert.AreEqual(expectedPrice, testPrice);
     }
-    
+
     [Ignore]
     [TestMethod]
     public void BreadPriceCalc_CalculateDiscount_Int()
