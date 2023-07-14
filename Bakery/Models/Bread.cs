@@ -12,6 +12,8 @@ public class Bread
 
     public int BreadPriceCalc()
     {
-        return Count * _price;
+        // int total = Count * _price;
+        int discount = (Count / 3 ) * _price;
+        return discount;
     }
 }
