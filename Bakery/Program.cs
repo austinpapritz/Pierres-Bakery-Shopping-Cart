@@ -7,15 +7,20 @@ class Program
     static void Main() 
     {
       // Welcome.
-      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
+      Console.WriteLine("~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
+      Console.WriteLine("*  ____  _                    _       ____        _                    ~");
+      Console.WriteLine("~ |  _ \\(_) ___ _ __ _ __ ___( )___  | __ )  __ _| | _____ _ __ _   _  *");
+      Console.WriteLine("* | |_) | |/ _ \\ '__| '__/ _ \\// __| |  _ \\ / _` | |/ / _ \\ '__| | | | ~");
+      Console.WriteLine("~ |  __/| |  __/ |  | | |  __/ \\__ \\ | |_) | (_| |   <  __/ |  | |_| | *");
+      Console.WriteLine("* |_|   |_|\\___|_|  |_|  \\___| |___/ |____/ \\__,_|_|\\_\\___|_|   \\__, | ~");
+      Console.WriteLine("~                                                               |___/  *");
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~");
       Console.WriteLine("Welcome to Pierre's Bakery!");
-      Console.WriteLine("A loaf of bread is $5, a pastry is $2!");
-      Console.WriteLine("Loaves of bread are buy 2 get 1 free!");
-      Console.WriteLine("Pastries are buy 3 get 1 free!");
-      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
+      Console.WriteLine("Bread = $5 (BUY 2 GET 1 FREE!!)");
+      Console.WriteLine("Pastries = $2 (BUY 3 GET 1 FREE!!)");
 
       // Take bread order.
-      Console.WriteLine("How many loaves of bread do you want?");
+      Console.WriteLine("\nHow many loaves of bread do you want?");
       int numOfLoaves = int.Parse(Console.ReadLine());
       // Calculate bread total.
       Bread breadOrder = new Bread(numOfLoaves);
@@ -29,7 +34,7 @@ class Program
       int pastryTotal = pastryOrder.PastryPriceCalc();
 
       // Calculate and tell user the order total.
-      Console.WriteLine("Here are your totals");
+      Console.WriteLine("\nHere are your totals");
       Console.WriteLine($"Bread ({numOfLoaves}) = ${breadTotal}");
       Console.WriteLine($"Pastry ({numOfPastries}) = ${pastryTotal}");
       Console.WriteLine($"Your total = ${breadTotal + pastryTotal}");

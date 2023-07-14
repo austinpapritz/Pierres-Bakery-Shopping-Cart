@@ -4,11 +4,14 @@
 
 #### _Add to your shopping cart any number of Pierre's finest bread and pastries and the system will automatically calculate your total!_
 
+![Pierre's Bakery Shopping Cart screen shot](./Bakery/Assets/Pierres-bakery_ss.png)
+
 ## Technologies Used
 
 * _C#_
 * _.NET_
 * _Visual Studio Code_
+* _ASCII art generated using http://www.patorjk.com/software/taag_
 
 ## Description
 
@@ -24,6 +27,8 @@ _Pierre's Bakery Shopping Cart is a console app that will guide you through the 
 ## Known Bugs
 
 * _If user does not enter an integer, the app will break._
+* _Program.cs(19,35): warning CS8604: Possible null reference argument for parameter 
+'s' in 'int int.Parse(string s)'_
 
 ## License
 
