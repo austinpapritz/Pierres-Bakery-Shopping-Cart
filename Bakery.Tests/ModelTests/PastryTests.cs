@@ -1,7 +1,7 @@
 namespace Bakery.Tests;
 
 [TestClass]
-public class UnitTest1
+public class PastryTests
 {
     [TestMethod]
     public void TestMethod1()
