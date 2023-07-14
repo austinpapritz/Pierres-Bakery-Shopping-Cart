@@ -14,4 +14,16 @@ public class PastryTests
         Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
 
+        [TestMethod]
+    public void PastryPriceCalc_ReturnProductOfCountAndPrice_Int()
+    {
+        // Arrange
+        int expectedPrice = 2;
+        Pastry newPastry = new Pastry(1);
+        // Act
+        int testPrice = newPastry.PastryPriceCalc();
+        // Assert
+        Assert.AreEqual(expectedPrice, testPrice);
+    }
+
 }
