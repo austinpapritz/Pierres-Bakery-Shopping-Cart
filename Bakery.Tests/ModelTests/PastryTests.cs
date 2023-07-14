@@ -13,7 +13,7 @@ public class PastryTests
         // Assert
         Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
-        [Ignore]
+
         [TestMethod]
     public void PastryPriceCalc_ReturnProductOfCountAndPrice_Int()
     {
@@ -26,6 +26,7 @@ public class PastryTests
         Assert.AreEqual(expectedPrice, testPrice);
     }
 
+    [Ignore]
     [TestMethod]
     public void PastryPriceCalc_CalculateDiscount_Int()
     {
@@ -46,6 +47,25 @@ public class PastryTests
         Assert.AreEqual(discountTwoPastry, noDiscount);
         Assert.AreEqual(discountThreePastry, noDiscount);
         Assert.AreEqual(discountFourPastry, discount);
+    }
+
+     [TestMethod]
+    public void PastryPriceCalc_CalculatePriceMinusDiscount_Int()
+    {
+        // Arrange
+        int expectedPriceSix = 10;
+        int expectedPriceSevenAndEight = 12;
+        Pastry sixPastry = new Pastry(6);
+        Pastry sevenPastry = new Pastry(7);
+        Pastry eightPastry = new Pastry(8);
+        // Act
+        int sixPastryTotal = sixPastry.PastryPriceCalc(); 
+        int sevenPastryTotal = sevenPastry.PastryPriceCalc(); 
+        int eightPastryTotal = eightPastry.PastryPriceCalc();
+        // Assert
+        Assert.AreEqual(sixPastryTotal, expectedPriceSix);
+        Assert.AreEqual(sevenPastryTotal, expectedPriceSevenAndEight);
+        Assert.AreEqual(eightPastryTotal, expectedPriceSevenAndEight);
     }
 
 }
