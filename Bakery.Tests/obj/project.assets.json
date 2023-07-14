@@ -2325,11 +2325,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj",
       "projectName": "Bakery.Tests",
-      "projectPath": "c:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj",
+      "projectPath": "C:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj",
       "packagesPath": "C:\\Users\\P4ppy\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery.Tests\\obj\\",
+      "outputPath": "C:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2351,8 +2351,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery\\Bakery.csproj": {
-              "projectPath": "c:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery\\Bakery.csproj"
+            "C:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery\\Bakery.csproj": {
+              "projectPath": "C:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery\\Bakery.csproj"
             }
           }
         }
