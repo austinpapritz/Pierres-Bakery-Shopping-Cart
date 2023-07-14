@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "80kWA1L2RqZAkdqkS/eKtHRWU4C+RaM9PMC629CYXF9ddW5ruM/+1ZthVO/Twj5c0WvbMdIP88nXN09wNeNPEA==",
+  "dgSpecHash": "OOFGxJ7aijmM+rzFPzApNss1nbRtjZakoT5YHLlnTS1fFtyB+98npdK16zI5Ff0Ak2jHcUF2L6tX2AuPi871RA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj",
+  "projectFilePath": "c:\\Users\\P4ppy\\Epicodus\\C#\\Week 1\\Bakery.Solution\\Bakery.Tests\\Bakery.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\P4ppy\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\P4ppy\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
