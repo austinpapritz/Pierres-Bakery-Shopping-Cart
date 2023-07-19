@@ -34,4 +34,24 @@ public class BreadTests
         Assert.AreEqual(fourBreadTotal, expectedPriceFour);
         Assert.AreEqual(fiveBreadTotal, expectedPriceFive);
     }
+
+    [TestMethod]
+    public void BreadPriceCalc_CalculateDiscountBread_Int()
+    {
+        // Arrange
+        int expectedPriceThree= 10;
+        int expectedPriceSix= 20;
+        int expectedPriceNine = 30;
+        Bread threeBread = new Bread(3);
+        Bread sixBread = new Bread(6);
+        Bread nineBread = new Bread(9);
+        // Act
+        int threeBreadTotal = threeBread.BreadPriceCalc(); 
+        int sixBreadTotal = sixBread.BreadPriceCalc(); 
+        int nineBreadTotal = nineBread.BreadPriceCalc();
+        // Assert
+        Assert.AreEqual(threeBreadTotal, expectedPriceThree);
+        Assert.AreEqual(sixBreadTotal, expectedPriceSix);
+        Assert.AreEqual(nineBreadTotal, expectedPriceNine);
+    }
 }
