@@ -20,29 +20,33 @@ class Program
     Console.WriteLine("Pastries = $2 (BUY 3 GET 1 FREE!!)");
 
     // Take bread order.
-    Console.WriteLine("\nHow many loaves of bread do you want?");
     int numOfLoaves;
-
-    // Catch null, negative, and non-parseable values.
-    try
+    // User will be prompted until they enter a valid order.
+    while (true)
     {
-      // Null catch.
-      string order = Console.ReadLine();
-      if (order == null)
+      Console.WriteLine("\nHow many loaves of bread do you want?");
+      // Catch null, negative, and non-parseable values.
+      try
       {
-        throw new ArgumentNullException();
+        // Null catch.
+        string order = Console.ReadLine();
+        if (order == null)
+        {
+          throw new ArgumentNullException();
+        }
+        // Parse order, catch negative values.
+        numOfLoaves = int.Parse(order);
+        if (numOfLoaves < 0)
+        {
+          throw new ArgumentOutOfRangeException();
+        }
+        // Order is valid, break the while loop.
+        break;
       }
-      // Parse order, catch negative values.
-      numOfLoaves = int.Parse(order);
-      if (numOfLoaves < 0)
+      catch (Exception)
       {
-        throw new ArgumentOutOfRangeException();
+        Console.WriteLine("!!! Please enter a whole positive number !!!");
       }
-    }
-    catch (Exception)
-    {
-      Console.WriteLine("Please enter a whole positive number.");
-      return;
     }
 
     // Calculate bread total.
@@ -51,29 +55,35 @@ class Program
 
 
     // Take pastry order.
-    Console.WriteLine("How many pastries do you want?");
     int numOfPastries;
+    // User will be prompted until they enter a valid order.
+    while (true)
+    {
+      Console.WriteLine("\nHow many pastries do you want?");
 
-    // Catch negative, null, and non-parseable values.
-    try
-    {
-      // Null catch.
-      string order = Console.ReadLine();
-      if (order == null)
+      // Catch negative, null, and non-parseable values.
+      try
       {
-        throw new ArgumentNullException();
+        // Null catch.
+        string order = Console.ReadLine();
+        if (order == null)
+        {
+          throw new ArgumentNullException();
+        }
+        // Parse order and catch negative values.
+        numOfPastries = int.Parse(order);
+        if (numOfPastries < 0)
+        {
+          throw new ArgumentOutOfRangeException();
+        }
+        // Order is valid, break the while loop.
+        break;
       }
-      // Parse order and catch negative values.
-      numOfPastries = int.Parse(order);
-      if (numOfPastries < 0)
+      catch (Exception)
       {
-        throw new ArgumentOutOfRangeException();
+        Console.WriteLine("!!! Please enter a whole positive number !!!");
+
       }
-    }
-    catch (Exception)
-    {
-      Console.WriteLine("Please enter a whole positive number.");
-      return;
     }
 
     // Calculate pastry total.
