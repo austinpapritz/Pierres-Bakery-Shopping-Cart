@@ -14,55 +14,24 @@ public class BreadTests
         Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
-    [Ignore]
-    [TestMethod]
-    public void BreadPriceCalc_ReturnProductOfCountAndPrice_Int()
-    {
-        // Arrange
-        int expectedPrice = 5;
-        Bread newBread = new Bread(1);
-        // Act
-        int testPrice = newBread.BreadPriceCalc();
-        // Assert
-        Assert.AreEqual(expectedPrice, testPrice);
-    }
 
-    [Ignore]
     [TestMethod]
-    public void BreadPriceCalc_CalculateDiscount_Int()
+    public void BreadPriceCalc_CalculateFullPriceBread_Int()
     {
         // Arrange
-        int noDiscount = 0;
-        int discount = 5;
-        Bread oneBread = new Bread(1);
+        int expectedPriceTwo= 10;
+        int expectedPriceFour = 15;
+        int expectedPriceFive = 20;
         Bread twoBread = new Bread(2);
-        Bread threeBread = new Bread(3);
+        Bread fourBread = new Bread(4);
+        Bread fiveBread = new Bread(5);
         // Act
-        int discountOneBread = oneBread.BreadPriceCalc(); 
-        int discountTwoBread = twoBread.BreadPriceCalc(); 
-        int discountThreeBread = threeBread.BreadPriceCalc();
+        int twoBreadTotal = twoBread.BreadPriceCalc(); 
+        int fourBreadTotal = fourBread.BreadPriceCalc(); 
+        int fiveBreadTotal = fiveBread.BreadPriceCalc();
         // Assert
-        Assert.AreEqual(discountOneBread, noDiscount);
-        Assert.AreEqual(discountTwoBread, noDiscount);
-        Assert.AreEqual(discountThreeBread, discount);
-    }
-
-    [TestMethod]
-    public void BreadPriceCalc_CalculatePriceMinusDiscount_Int()
-    {
-        // Arrange
-        int expectedPriceSeven = 25;
-        int expectedPriceEightAndNine = 30;
-        Bread sevenBread = new Bread(7);
-        Bread eightBread = new Bread(8);
-        Bread nineBread = new Bread(9);
-        // Act
-        int sevenBreadTotal = sevenBread.BreadPriceCalc(); 
-        int eightBreadTotal = eightBread.BreadPriceCalc(); 
-        int nineBreadTotal = nineBread.BreadPriceCalc();
-        // Assert
-        Assert.AreEqual(sevenBreadTotal, expectedPriceSeven);
-        Assert.AreEqual(eightBreadTotal, expectedPriceEightAndNine);
-        Assert.AreEqual(nineBreadTotal, expectedPriceEightAndNine);
+        Assert.AreEqual(twoBreadTotal, expectedPriceTwo);
+        Assert.AreEqual(fourBreadTotal, expectedPriceFour);
+        Assert.AreEqual(fiveBreadTotal, expectedPriceFive);
     }
 }
