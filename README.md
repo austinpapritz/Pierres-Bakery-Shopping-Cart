@@ -26,9 +26,7 @@ _Pierre's Bakery Shopping Cart is a console app that will guide you through the 
 
 ## Known Bugs
 
-* _If user does not enter an integer, the app will break._
-* _Program.cs(19,35): warning CS8604: Possible null reference argument for parameter 
-'s' in 'int int.Parse(string s)'_
+_none_
 
 ## License
 
