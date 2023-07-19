@@ -34,4 +34,24 @@ public class PastryTests
         Assert.AreEqual(sevenPastryTotal, expectedPriceSeven);
     }
 
+     [TestMethod]
+    public void PastryPriceCalc_CalculateDiscountPastry_Int()
+    {
+        // Arrange
+        int expectedPriceFour = 6;
+        int expectedPriceEight = 12;
+        int expectedPriceTwelve = 18;
+        Pastry fourPastry = new Pastry(4);
+        Pastry eightPastry = new Pastry(8);
+        Pastry twelvePastry = new Pastry(12);
+        // Act
+        int fourPastryTotal = fourPastry.PastryPriceCalc(); 
+        int eightPastryTotal = eightPastry.PastryPriceCalc(); 
+        int twelvePastryTotal = twelvePastry.PastryPriceCalc();
+        // Assert
+        Assert.AreEqual(fourPastryTotal, expectedPriceFour);
+        Assert.AreEqual(eightPastryTotal, expectedPriceEight);
+        Assert.AreEqual(twelvePastryTotal, expectedPriceTwelve);
+    }
+
 }
