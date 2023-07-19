@@ -15,7 +15,7 @@ public class PastryTests
     }
 
      [TestMethod]
-    public void PastryPriceCalc_CalculateFullPricePastry_Int()
+    public void TotalPriceCalc_CalculateFullPricePastry_Int()
     {
         // Arrange
         int expectedPriceTwo = 4;
@@ -25,9 +25,9 @@ public class PastryTests
         Pastry fivePastry = new Pastry(5);
         Pastry sevenPastry = new Pastry(7);
         // Act
-        int twoPastryTotal = twoPastry.PastryPriceCalc(); 
-        int fivePastryTotal = fivePastry.PastryPriceCalc(); 
-        int sevenPastryTotal = sevenPastry.PastryPriceCalc();
+        int twoPastryTotal = twoPastry.TotalPriceCalc(); 
+        int fivePastryTotal = fivePastry.TotalPriceCalc(); 
+        int sevenPastryTotal = sevenPastry.TotalPriceCalc();
         // Assert
         Assert.AreEqual(twoPastryTotal, expectedPriceTwo);
         Assert.AreEqual(fivePastryTotal, expectedPriceFive);
@@ -35,7 +35,7 @@ public class PastryTests
     }
 
      [TestMethod]
-    public void PastryPriceCalc_CalculateDiscountPastry_Int()
+    public void TotalPriceCalc_CalculateDiscountPastry_Int()
     {
         // Arrange
         int expectedPriceFour = 6;
@@ -45,9 +45,9 @@ public class PastryTests
         Pastry eightPastry = new Pastry(8);
         Pastry twelvePastry = new Pastry(12);
         // Act
-        int fourPastryTotal = fourPastry.PastryPriceCalc(); 
-        int eightPastryTotal = eightPastry.PastryPriceCalc(); 
-        int twelvePastryTotal = twelvePastry.PastryPriceCalc();
+        int fourPastryTotal = fourPastry.TotalPriceCalc(); 
+        int eightPastryTotal = eightPastry.TotalPriceCalc(); 
+        int twelvePastryTotal = twelvePastry.TotalPriceCalc();
         // Assert
         Assert.AreEqual(fourPastryTotal, expectedPriceFour);
         Assert.AreEqual(eightPastryTotal, expectedPriceEight);

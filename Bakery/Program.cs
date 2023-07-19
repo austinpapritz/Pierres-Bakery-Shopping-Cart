@@ -24,14 +24,14 @@ class Program
       int numOfLoaves = int.Parse(Console.ReadLine());
       // Calculate bread total.
       Bread breadOrder = new Bread(numOfLoaves);
-      int breadTotal = breadOrder.BreadPriceCalc();
+      int breadTotal = breadOrder.TotalPriceCalc();
 
       // Take pastry order.
       Console.WriteLine("How many pastries do you want?");
       int numOfPastries = int.Parse(Console.ReadLine());
       // Calculate pastry total.
       Pastry pastryOrder = new Pastry(numOfPastries);
-      int pastryTotal = pastryOrder.PastryPriceCalc();
+      int pastryTotal = pastryOrder.TotalPriceCalc();
 
       // Calculate and tell user the order total.
       Console.WriteLine("\nHere are your totals");

@@ -1,19 +1,15 @@
 namespace Bakery.Models;
 
-public class Pastry
+public class Pastry : Product
 {
-    public int Count { get; set;}
-    private readonly int _price = 2;
-
-    public Pastry(int count)
+    public Pastry(int count) : base(count, 2)
     {
-        Count = count;
     }
 
-        public int PastryPriceCalc()
+    public override int TotalPriceCalc()
     {
         int total = Count * _price;
-        int discount = (Count / 4 ) * _price;
+        int discount = Count / 4 * _price;
         return total - discount;
     }
 }
