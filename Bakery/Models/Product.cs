@@ -11,6 +11,13 @@ namespace Bakery.Models
             _price = price;
         }
 
-        public abstract int TotalPriceCalc();
+        public int TotalPriceCalc()
+        {
+            int total = Count * _price;
+            int discount = CalculateDiscount();
+            return total - discount;
+        }
+
+        public abstract int CalculateDiscount();
     }
 }
